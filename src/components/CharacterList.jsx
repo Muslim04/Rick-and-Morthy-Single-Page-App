@@ -7,7 +7,7 @@ const CharacterList = () => {
 
   return (
     <table className="table">
-      <thead>
+      <thead className="table-dark">
         <tr>
           <th scope="col" className="text-center">
             Avatar

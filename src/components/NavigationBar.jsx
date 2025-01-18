@@ -1,20 +1,23 @@
 import React from "react";
-import ReactLogo from "../assets/react.svg";
+import RickAndMortyLogo from "../assets/rick&morty.svg";
 
 const NavigationBar = () => {
   return (
-    <nav className="navbar bg-body-tertiary">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        <a className="navbar-brand d-flex align-items-center gap-2" href="#">
           <img
-            src={ReactLogo}
+            src={RickAndMortyLogo}
             alt="Logo"
-            width="30"
-            height="24"
-            className="d-inline-block align-text-top"
+            width="60"
+            height="52"
+            className="d-inline-block"
           />
-          Bootstrap
         </a>
+
+        <span className="fw-bold fs-5 mx-auto text-white">
+          The Rick and Morty API
+        </span>
 
         <form className="d-flex" role="search">
           <input
@@ -23,7 +26,7 @@ const NavigationBar = () => {
             placeholder="Search"
             aria-label="Search"
           />
-          <button className="btn btn-outline-success" type="submit">
+          <button className="btn btn-outline-light" type="submit">
             Search
           </button>
         </form>

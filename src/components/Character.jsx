@@ -14,7 +14,11 @@ const Character = ({ character }) => {
         />
       </th>
       <td>
-        <Link to={`/${character.id}`} className="text-decoration-none">
+        <Link
+          to={`/character/${character.id}`}
+          onClick={() => fetchCharacter(id)}
+          className="text-decoration-none text-dark"
+        >
           {character.name}
         </Link>
       </td>
