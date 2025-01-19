@@ -2,15 +2,15 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.css";
 import App from "./App.jsx";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { CharacterProvider } from "./context/CharacterContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CharacterProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </CharacterProvider>
   </StrictMode>
 );
