@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import HomePage from "./pages/HomePage";
-import ProfilePage from "./components/ProfilePage";
+import ProfilePage from "./pages/ProfilePage";
 import { CharacterProvider } from "./context/CharacterContext";
 
 function App() {

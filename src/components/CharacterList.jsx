@@ -1,6 +1,6 @@
 import React from "react";
 import Character from "./Character";
-import "./custom.css";
+import "../styles/custom.css";
 
 const CharacterList = ({ characters = [] }) => {
   return (
