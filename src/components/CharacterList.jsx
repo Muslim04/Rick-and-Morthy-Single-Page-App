@@ -1,28 +1,34 @@
-import React, { useContext } from "react";
-import { CharacterContext } from "../context/CharacterContext";
+import React from "react";
 import Character from "./Character";
+import "./custom.css";
 
-const CharacterList = () => {
-  const { characters } = useContext(CharacterContext);
-
+const CharacterList = ({ characters = [] }) => {
   return (
-    <table className="table">
-      <thead className="table-dark">
-        <tr>
-          <th scope="col" className="text-center">
-            Avatar
-          </th>
-          <th scope="col">Name</th>
-          <th scope="col">Species</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        {characters.map((char) => (
-          <Character key={char.id} character={char} />
-        ))}
-      </tbody>
-    </table>
+    <div className="table-responsive">
+      <table className="table  text-center">
+        <thead className="table-dark">
+          <tr>
+            <th scope="col" style={{ width: "10%" }}>
+              Avatar
+            </th>
+            <th scope="col" style={{ width: "40%" }}>
+              Name
+            </th>
+            <th scope="col" style={{ width: "25%" }}>
+              Species
+            </th>
+            <th scope="col" style={{ width: "25%" }}>
+              Status
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {characters.map((char) => (
+            <Character key={char.id} character={char} />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 

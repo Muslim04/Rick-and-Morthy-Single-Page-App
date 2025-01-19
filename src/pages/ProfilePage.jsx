@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { CharacterContext } from "../context/CharacterContext";
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "../components/NavigationBar";
 
 const ProfilePage = () => {
   const { id } = useParams();
@@ -42,7 +42,7 @@ const ProfilePage = () => {
         </div>
 
         <div className="d-flex justify-content-center">
-          <div className="card shadow-lg rounded" style={{ width: "22rem" }}>
+          <div className="card shadow-lg rounded" style={{ width: "20rem" }}>
             <img
               src={character.image}
               className="card-img-top rounded-top"
@@ -67,10 +67,13 @@ const ProfilePage = () => {
               <li className="list-group-item">
                 <strong>Gender:</strong> {character.gender}
               </li>
+              <li className="list-group-item">
+                <strong>Episodes:</strong> {character.episode.length}
+              </li>
             </ul>
             <div className="card-body text-center">
               <a
-                href={`https://rickandmorty.fandom.com/wiki/${character.name.replace(
+                href={`https://rickandmortyapi.com/api/character/${id.replace(
                   /\s/g,
                   "_"
                 )}`}

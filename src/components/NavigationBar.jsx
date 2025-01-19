@@ -1,7 +1,7 @@
 import React from "react";
 import RickAndMortyLogo from "../assets/rick&morty.svg";
 
-const NavigationBar = () => {
+const NavigationBar = ({ onSearch }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
       <div className="container-fluid d-flex justify-content-between align-items-center">
@@ -25,10 +25,8 @@ const NavigationBar = () => {
             type="search"
             placeholder="Search"
             aria-label="Search"
+            onChange={(e) => onSearch(e.target.value)}
           />
-          <button className="btn btn-outline-light" type="submit">
-            Search
-          </button>
         </form>
       </div>
     </nav>
