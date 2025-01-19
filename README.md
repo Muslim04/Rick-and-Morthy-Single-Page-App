@@ -35,7 +35,7 @@ This React app allows users to search, filter, and paginate through a list of ch
 - **Bootstrap**: Used for styling and responsive design.
 - **React Router**: For client-side routing and navigation.
 - **Rick and Morty API**: Provides character data for the app.
-- **CSS**: For additional styling (if needed).
+- **CSS**: For additional styling.
 
 ---
 
@@ -45,7 +45,7 @@ To run the project locally, follow the steps below:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/rick-and-morty-app.git
+   git clone https://github.com/Muslim04/rick-and-morty-app.git
 2. Navigate into the project directory:
    ```bash
    cd rick-and-morty-app
