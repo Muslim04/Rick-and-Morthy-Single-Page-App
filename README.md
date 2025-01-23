@@ -45,7 +45,7 @@ To run the project locally, follow the steps below:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Muslim04/rick-and-morty-app.git
+   git clone https://github.com/Muslim04/rick-and-morty-single-page-app.git
 2. Navigate into the project directory:
    ```bash
    cd rick-and-morty-app
