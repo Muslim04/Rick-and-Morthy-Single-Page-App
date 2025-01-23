@@ -48,7 +48,7 @@ To run the project locally, follow the steps below:
    git clone https://github.com/Muslim04/rick-and-morty-single-page-app.git
 2. Navigate into the project directory:
    ```bash
-   cd rick-and-morty-app
+   cd .\Rick-and-Morthy-Single-Page-App\
 3. Install dependicies:
    ```bash
    npm install
